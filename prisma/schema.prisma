@@ -14,9 +14,9 @@ datasource db {
   directUrl = env("DIRECT_URL")
 }
 
-model Post{
+model Post {
   id String @id @default(uuid()) @db.Uuid
   title String
   content String
-  date dataframe @default(now())
+  date DateTime @default(now())
 }
