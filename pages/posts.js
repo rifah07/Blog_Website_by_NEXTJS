@@ -16,7 +16,7 @@ export async function getServerSideProps() {
 
 export default function PostPage(props) {
   return (
-    <div>
+    <div className="container" >
       <h1>Blog Posts</h1>
       <ul>
         {props.posts.map((post) => (
