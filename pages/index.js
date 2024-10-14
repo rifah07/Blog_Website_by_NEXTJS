@@ -20,7 +20,7 @@ export async function getServerSideProps() {
 export default function PostPage(props) {
   return (
     <Layout>
-      <h1 className="text-4xl font-bold text-center mb-8 text-black">
+      <h1 className="text-4xl font-bold text-center mb-8 ">
         Blog Posts
       </h1>
 
