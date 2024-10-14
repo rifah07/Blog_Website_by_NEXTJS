@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
+import "../app/globals.css";
+
 
 export default function AddPostPage() {
   const [title, setTitle] = useState("");
