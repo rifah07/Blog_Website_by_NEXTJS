@@ -2,7 +2,7 @@ import '../app/globals.css';
 
 export async function getServerSideProps() {
   try {
-    const res = await fetch(`${process.enc.API_URL}/posts`);
+    const res = await fetch(`${process.env.API_URL}/posts`);
     const posts = await res.json();
 
     return {
@@ -18,8 +18,8 @@ export async function getServerSideProps() {
 
 export default function PostPage(props) {
   return (
-    <div className="container mx-auto px-4 py-8 ">
-      <h1 className="text-4xl font-bold text-center mb-8">Blog Posts</h1>
+    <div className="container mx-auto px-4 py-8 bg-gray-50 ">
+      <h1 className="text-4xl font-bold text-center mb-8 text-black">Blog Posts</h1>
       <ul className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {props.posts.map((post) => (
           <li
